@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Jost',sans-serif;
+}
+
+/* modo nocturno */
+body.active {
+  background-color: #263238;
+}
+
+.container-active {
+  max-width: 90%;
+  margin-top: 25px;
+}
+
+.btn-active {
+  display: inline;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #37474f;
+  color: #fff;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+
+.btn-active:hover {
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .3);
+}
+
+body.active .btn-active {
+  background-color: #009688;
+}
+/* /modo nocturno */
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.card-header{
+  background-color: #fafafa;
+  padding: 0 20px;
+  height: 110px;
+  text-align: right;
+  overflow-y: scroll;
+  border-radius: 20px 20px 0 0;
+}
+
+#response {
+  position: relative;
+  top: 35px;
+  font-size: 2.2em;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: #f4f5f6;
+  width: 25%;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-num:hover {
+  background-color: #304ffe;
+  color: #fff;
+  box-shadow: 0 2px 15px -5px rgba(48, 79, 254, .5);
+}
+
+.btn.btn-opt{
+  background-color: #eceff1;
+  font-weight: 500;
+  color: #000;
+}
+
+.btn.btn.btn-opt:hover{
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn.btn-equal {
+  width: 100%;
+  background-color: #009688;
+  border-radius: 0 0 20px 20px;
+}
+
+.btn.btn-equal:hover{
+  background-color: #06b9a7;
+  color: #fff;
+}
